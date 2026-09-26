@@ -12,13 +12,13 @@
 ![NetworkWalks](https://img.shields.io/badge/NetworkWalks-grey)
 ![Ethical Hacking](https://img.shields.io/badge/Ethical%20Hacking-black)
 
-## 2. Introduction
+## Introduction
 
 I completed two modules that approached the same underlying task, recovering the password of a locked PDF file, using two different toolsets: John the Ripper (JTR) with its Johnny GUI (W3-PM1), and Networkwalks' own browser-based Hash Calculator and Password Cracker tools.
 
 The purpose of covering the same task with two different tools was to understand the underlying process which is extracting a password hash from a protected file, then running that hash through a cracking tool, independent of which specific software is used to do it.
 
-## 3. Tools Used
+## Tools Used
 
 | Tool | Purpose |
 |---|---|
@@ -30,9 +30,9 @@ The purpose of covering the same task with two different tools was to understand
 
 ---
 
-## 4. Activities Performed
+## Activities Performed
 
-### 4.1 W3-PM1 — Password Cracking with JTR (John the Ripper & Johnny)
+### PM1 — Password Cracking with JTR (John the Ripper & Johnny)
 
 **Step 1 — Install John the Ripper**
 I downloaded John the Ripper for Windows from the official Openwall website.
@@ -68,7 +68,7 @@ Once JTR reported a match, I opened the original locked PDF and entered the reco
 
 ---
 
-### 4.2 W3-PM2 — Password Cracking with Networkwalks Tools
+### PM2 — Password Cracking with Networkwalks Tools
 
 **Step 1 — Download the target file**
 I downloaded the same locked PDF, `My Locked PDF1.pdf`, from the Networkwalks lab page.
@@ -95,7 +95,7 @@ I opened the locked PDF and entered the password shown by the tool, confirming i
 
 ---
 
-## 5. Concepts Learned
+## Concepts Learned
 
 **Encryption vs. Hashing**
 Encryption is a two-way function — data that is encrypted can be decrypted again using the correct key. Hashing, by contrast, is a one-way function: it scrambles input (like a password) into a fixed-length value called a hash, and this process cannot be reversed directly. This is exactly why password cracking tools don't "decrypt" a password hash, instead, they generate guesses, hash each guess the same way the original password was hashed, and compare the result to the target hash. A match means the guess was correct.
@@ -105,7 +105,7 @@ Both modules reinforced the same real-world point: a simple 8-character lowercas
 
 ---
 
-## 7. Recommendations
+## Recommendations
 
 **Use long, complex passwords**
 Passwords should combine uppercase, lowercase, numbers and symbols, and be at least 12 characters long to meaningfully resist dictionary and brute-force attacks.
@@ -124,7 +124,7 @@ For genuinely sensitive files or systems, rely on additional protection layers b
 
 ---
 
-## 8. Conclusion
+## Conclusion
 
 During Week 3 of my Cybersecurity & Ethical Hacking internship, I completed two password cracking modules that approached the same task from two different angles, (John the Ripper with the Johnny GUI) and a browser-based toolset (Networkwalks' own Hash Calculator and Password Cracker).
 
